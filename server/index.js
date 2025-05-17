@@ -20,7 +20,7 @@ cloudinaryConnect();
 const app = express();
 
 app.use(cors({
-    origin: "*", // Allow frontend domain
+    origin: "https://gigzy-sigma.vercel.app/", // Allow frontend domain
     credentials: true, // Allow cookies
 }));
 
