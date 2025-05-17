@@ -20,7 +20,7 @@ cloudinaryConnect();
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:3000", // Allow frontend domain
+    origin: "*", // Allow frontend domain
     credentials: true, // Allow cookies
 }));
 
