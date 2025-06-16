@@ -10,7 +10,7 @@ const About = () => {
           Our mission is to simplify hiring and empower freelancers to monetize their skills effortlessly.
         </p>
         {/* <div className="mt-10 grid md:grid-cols-2 gap-8 text-left"> */}
-        <div className="mt-10 flex justify-around gap-8 text-left">
+        <div className="mt-10 flex flex-col justify-around gap-8 lg:flex-row lg:text-left text-center">
           <div>
             <h2 className="text-2xl font-semibold text-yellow-50 mb-2">What We Offer</h2>
             <ul className="list-disc list-inside text-richblack-200">

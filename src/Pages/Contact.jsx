@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen w-screen bg-richblack-900 text-richblack-100 px-6 py-16">
       {/* <div className="max-w-2xl mx-auto"> */}
-      <div className="w-1/2 mx-auto">
+      <div className="lg:w-1/2 mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-yellow-50 text-center">Contact Us</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div>
