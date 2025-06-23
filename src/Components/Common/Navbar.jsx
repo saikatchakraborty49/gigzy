@@ -170,7 +170,29 @@ const Navbar = () => {
               </div>
             ))}
             </div>
-      
+            <div className='h-1 bg-white opacity-10 w-10/12'></div>
+            <div className="mt-2 gap-y-1 flex flex-col">
+          {token === null && (
+            <Link to="/log-in">
+              <button className="rounded-[8px] border border-richblack-700 bg-richblack-800 px-[12px] py-[8px] text-richblack-100 w-10/12">
+                Log in
+              </button>
+            </Link>
+          )}
+          {token === null && (
+            <Link to="/sign-up">
+              <button className="rounded-[8px] border border-richblack-700 bg-richblack-800 px-[12px] py-[8px] text-richblack-100 w-10/12">
+                Sign up
+              </button>
+            </Link>
+          )}
+          {token !== null && 
+          <>
+            <ProfileDropdown/>
+            <Balance/>
+          </>
+          }
+        </div>
           </nav>
         </div>
     </div>
